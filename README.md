@@ -41,15 +41,19 @@ Tech Stack
 Project Structure
 
 churn-prediction-project/
+
 ├── api/
 │   ├── main.py               # Flask API for churn prediction
 │   ├── test_client.py        # Sends sample request to API
 │   ├── scaler.pkl            # Scaler used to transform input
 │   └── churn_model.pkl       # Trained ML model
+
 ├── dashboard/
 │   └── streamlit_app.py      # Streamlit dashboard
+
 ├── notebooks/
 │   └── churn_model_training.ipynb 
+
 ├── requirements.txt          # All required Python libraries
 └── README.md                 # Project overview (this file)
 
@@ -76,7 +80,7 @@ streamlit run streamlit_app.py
 
 If using Google Colab, you can expose your Streamlit app with pyngrok:
 
-from pyngrok import ngrok
+from pyngrok import ngrok 
 ngrok.set_auth_token("YOUR_AUTHTOKEN_HERE")
 public_url = ngrok.connect(8501)
 print("Dashboard URL:", public_url)
