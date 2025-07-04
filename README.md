@@ -75,12 +75,14 @@ cd dashboard
 streamlit run streamlit_app.py
 
 If using Google Colab, you can expose your Streamlit app with pyngrok:
+
 from pyngrok import ngrok
 ngrok.set_auth_token("YOUR_AUTHTOKEN_HERE")
 public_url = ngrok.connect(8501)
 print("Dashboard URL:", public_url)
 
 Example API Input (JSON)
+
 {
   "SeniorCitizen": 0,
   "Partner": 1,
